@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
     <title>Document</title>
-
-    <script>
+        <script id="test">
         var converter = new showdown.Converter(),
             text      = `
 # hello, markdown!
@@ -17,7 +16,10 @@
             `,
             html      = converter.makeHtml(text);
 
-        console.log(html);
+        
+$(document).ready(function(){
+   $('body').append($("#test").html());
+});
     </script>
 </head>
 <body>
