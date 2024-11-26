@@ -17,14 +17,12 @@
             html      = converter.makeHtml(text);
     </script>
     
-$(document).ready(
-    function(){
-       $(#'kek').append(html).html();
-    });
+$(document).ready(function(){
+   $("#kkek").html(html));
+});
 </head>
-<body> 
-<div class="tip" markdown="1">Have **fun!**</div>
-<div class="tip" id="kek"/>
-
+<body>
+<div id="kkek">
+</div>
 </body>
 </html>
