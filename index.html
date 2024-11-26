@@ -6,15 +6,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
     <title>Document</title>
         <script id="test">
-        var converter = new showdown.Converter(),
-            text      = `
+        var converter = new showdown.Converter();
+        var    text      = `
 # hello, markdown!
 
 - *list1*
 - list2
 - **list3**
-            `,
-            html      = converter.makeHtml(text);
+            `;
+           var html      = converter.makeHtml(text);
 
 $(document).ready(function(){
    $("#kkek").html(html);
