@@ -16,9 +16,11 @@
             `,
             html      = converter.makeHtml(text);
     </script>
-    $(document).ready(function(){
-   $(#'kek').append(text).html());
-});
+    
+$(document).ready(
+    function(){
+       $(#'kek').append(html).html();
+    });
 </head>
 <body> 
 <div class="tip" markdown="1">Have **fun!**</div>
